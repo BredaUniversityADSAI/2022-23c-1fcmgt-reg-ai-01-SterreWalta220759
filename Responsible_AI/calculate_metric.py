@@ -1,12 +1,12 @@
 import numpy as np
 
 def load_confusion_matrices():
-    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
+    cm_priv = np.load('/Responsible_AI/confusion_matrix_priv_female.npy/')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('/Responsible_AI/confusion_matrix_unpriv_male.npy/')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
